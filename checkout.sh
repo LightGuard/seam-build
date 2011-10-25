@@ -112,7 +112,7 @@ BUILD=0
 PULL=0
 RUN=1
 
-REPOS="parent build dist examples catch config drools faces international jcr jms mail persistence remoting rest security servlet social solder validation ticket-monster wicket"
+REPOS="parent build dist examples drools faces international jcr jms mail persistence remoting rest security social solder validation ticket-monster wicket"
 
 while getopts “aphmd:bcv” OPTION
 do
@@ -121,7 +121,7 @@ do
              FETCHALL=1
              ;;
          h)
-             usage
+             usage;
              RUN=0
              ;;
          d)
